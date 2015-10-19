@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1C39A6C41781C52C00223A30 /* WinkAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1C39A6C71781C52C00223A30 /* Build configuration list for PBXAggregateTarget "WinkAggregate" */;
+			buildPhases = (
+				1C39A6C81781C53300223A30 /* ShellScript */,
+			);
+			dependencies = (
+				1837C3CD19863D6A0093F93B /* PBXTargetDependency */,
+			);
+			name = WinkAggregate;
+			productName = WinkAggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1837C3AA19863C570093F93B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1837C30319863B1B0093F93B /* Foundation.framework */; };
+		1837C3D619863DB60093F93B /* BluetoothListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F98AEF41920B6360047F932 /* BluetoothListener.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1837C3E319863DB60093F93B /* WinkData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF81E37177338AA00DD723C /* WinkData.m */; };
+		1837C3E719863DB60093F93B /* RangeDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF81E62177338AA00DD723C /* RangeDefinition.m */; };
+		1837C40119863DB60093F93B /* ProductBluetoothTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F972D971923982C00FFA79C /* ProductBluetoothTest.m */; };
+		1837C44319863DB60093F93B /* WinkAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF81E3D177338AA00DD723C /* WinkAPI.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1837C4C619863EFE0093F93B /* BluetoothListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F98AEF31920B6360047F932 /* BluetoothListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C4CE19863F660093F93B /* WinkData.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E36177338AA00DD723C /* WinkData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C4D019863F660093F93B /* RangeDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E61177338AA00DD723C /* RangeDefinition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C4D119863F660093F93B /* ProductDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E4F177338AA00DD723C /* ProductDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C4DE19863F660093F93B /* ProductBluetoothTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F972D961923982C00FFA79C /* ProductBluetoothTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C4FF19863F690093F93B /* WinkAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E3C177338AA00DD723C /* WinkAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C50019863F690093F93B /* WinkAPIProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E3E177338AA00DD723C /* WinkAPIProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1837C502198640900093F93B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CF81E231773377A00DD723C /* InfoPlist.strings */; };
+		1868613D19864FD200980618 /* WinkPublic.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF81E41177338AA00DD723C /* WinkPublic.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1868613E198650A600980618 /* WinkBluetoothProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F98AEF51920B6360047F932 /* WinkBluetoothProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F51921B1A78DE2B0091BA2B /* ProductWinkBT.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5192191A78DE2B0091BA2B /* ProductWinkBT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F51921C1A78DE2B0091BA2B /* ProductWinkBT.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F51921A1A78DE2B0091BA2B /* ProductWinkBT.m */; };
+		9F5689E31ADF9DCC00A49AF1 /* GenericProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F5689E11ADF9DCC00A49AF1 /* GenericProduct.m */; };
+		9F5689E41ADF9DCC00A49AF1 /* GenericProduct.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5689E21ADF9DCC00A49AF1 /* GenericProduct.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F5689E61ADF9E1C00A49AF1 /* ProductProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F5689E51ADF9E1C00A49AF1 /* ProductProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1837C3CC19863D6A0093F93B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CF81E121773377A00DD723C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1837C3A819863C570093F93B;
+			remoteInfo = WinkAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1837C3A719863C570093F93B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1837C30319863B1B0093F93B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1837C31119863B1B0093F93B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1837C31419863B1B0093F93B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		1837C3A919863C570093F93B /* libWinkAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWinkAPI.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF81E221773377A00DD723C /* WinkAPI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WinkAPI-Info.plist"; sourceTree = "<group>"; };
+		1CF81E241773377A00DD723C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CF81E261773377A00DD723C /* WinkAPI-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WinkAPI-Prefix.pch"; sourceTree = "<group>"; };
+		1CF81E36177338AA00DD723C /* WinkData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinkData.h; sourceTree = "<group>"; };
+		1CF81E37177338AA00DD723C /* WinkData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinkData.m; sourceTree = "<group>"; };
+		1CF81E3C177338AA00DD723C /* WinkAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinkAPI.h; sourceTree = "<group>"; };
+		1CF81E3D177338AA00DD723C /* WinkAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WinkAPI.m; sourceTree = "<group>"; };
+		1CF81E3E177338AA00DD723C /* WinkAPIProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinkAPIProtocol.h; sourceTree = "<group>"; };
+		1CF81E41177338AA00DD723C /* WinkPublic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinkPublic.h; sourceTree = "<group>"; };
+		1CF81E4F177338AA00DD723C /* ProductDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDefinitions.h; sourceTree = "<group>"; };
+		1CF81E61177338AA00DD723C /* RangeDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RangeDefinition.h; sourceTree = "<group>"; };
+		1CF81E62177338AA00DD723C /* RangeDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RangeDefinition.m; sourceTree = "<group>"; };
+		9F5192191A78DE2B0091BA2B /* ProductWinkBT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductWinkBT.h; sourceTree = "<group>"; };
+		9F51921A1A78DE2B0091BA2B /* ProductWinkBT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductWinkBT.m; sourceTree = "<group>"; };
+		9F5689E11ADF9DCC00A49AF1 /* GenericProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericProduct.m; sourceTree = "<group>"; };
+		9F5689E21ADF9DCC00A49AF1 /* GenericProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericProduct.h; sourceTree = "<group>"; };
+		9F5689E51ADF9E1C00A49AF1 /* ProductProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductProtocol.h; sourceTree = "<group>"; };
+		9F972D961923982C00FFA79C /* ProductBluetoothTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductBluetoothTest.h; sourceTree = "<group>"; };
+		9F972D971923982C00FFA79C /* ProductBluetoothTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductBluetoothTest.m; sourceTree = "<group>"; };
+		9F98AEF31920B6360047F932 /* BluetoothListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluetoothListener.h; sourceTree = "<group>"; };
+		9F98AEF41920B6360047F932 /* BluetoothListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BluetoothListener.m; sourceTree = "<group>"; };
+		9F98AEF51920B6360047F932 /* WinkBluetoothProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WinkBluetoothProtocol.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1837C3A619863C570093F93B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1837C3AA19863C570093F93B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CF81E111773377A00DD723C = {
+			isa = PBXGroup;
+			children = (
+				1CF81E201773377A00DD723C /* WinkAPI */,
+				1CF81E1F1773377A00DD723C /* Products */,
+				1CF81E2C1773377F00DD723C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CF81E1F1773377A00DD723C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1837C3A919863C570093F93B /* libWinkAPI.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CF81E201773377A00DD723C /* WinkAPI */ = {
+			isa = PBXGroup;
+			children = (
+				9F98AEF21920B6290047F932 /* Bluetooth */,
+				1CF81E41177338AA00DD723C /* WinkPublic.h */,
+				1CF81E2F1773378D00DD723C /* Utils */,
+				1CF81E2E1773378900DD723C /* Products */,
+				1CF81E2D1773378400DD723C /* Main Api */,
+				1CF81E211773377A00DD723C /* Supporting Files */,
+			);
+			path = WinkAPI;
+			sourceTree = "<group>";
+		};
+		1CF81E211773377A00DD723C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CF81E221773377A00DD723C /* WinkAPI-Info.plist */,
+				1CF81E231773377A00DD723C /* InfoPlist.strings */,
+				1CF81E261773377A00DD723C /* WinkAPI-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CF81E2C1773377F00DD723C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1837C30319863B1B0093F93B /* Foundation.framework */,
+				1837C31119863B1B0093F93B /* XCTest.framework */,
+				1837C31419863B1B0093F93B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CF81E2D1773378400DD723C /* Main Api */ = {
+			isa = PBXGroup;
+			children = (
+				1CF81E3C177338AA00DD723C /* WinkAPI.h */,
+				1CF81E3D177338AA00DD723C /* WinkAPI.m */,
+				1CF81E3E177338AA00DD723C /* WinkAPIProtocol.h */,
+			);
+			name = "Main Api";
+			sourceTree = "<group>";
+		};
+		1CF81E2E1773378900DD723C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F5689E51ADF9E1C00A49AF1 /* ProductProtocol.h */,
+				9F5689E11ADF9DCC00A49AF1 /* GenericProduct.m */,
+				9F5689E21ADF9DCC00A49AF1 /* GenericProduct.h */,
+				1CF81E4F177338AA00DD723C /* ProductDefinitions.h */,
+				1CF81E9E1773392E00DD723C /* Specific products */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CF81E2F1773378D00DD723C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1CF81E301773379400DD723C /* Data */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		1CF81E301773379400DD723C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1CF81E36177338AA00DD723C /* WinkData.h */,
+				1CF81E37177338AA00DD723C /* WinkData.m */,
+				1CF81E61177338AA00DD723C /* RangeDefinition.h */,
+				1CF81E62177338AA00DD723C /* RangeDefinition.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		1CF81E9E1773392E00DD723C /* Specific products */ = {
+			isa = PBXGroup;
+			children = (
+				9F972D961923982C00FFA79C /* ProductBluetoothTest.h */,
+				9F972D971923982C00FFA79C /* ProductBluetoothTest.m */,
+				9F5192191A78DE2B0091BA2B /* ProductWinkBT.h */,
+				9F51921A1A78DE2B0091BA2B /* ProductWinkBT.m */,
+			);
+			name = "Specific products";
+			sourceTree = "<group>";
+		};
+		9F98AEF21920B6290047F932 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				9F98AEF31920B6360047F932 /* BluetoothListener.h */,
+				9F98AEF41920B6360047F932 /* BluetoothListener.m */,
+				9F98AEF51920B6360047F932 /* WinkBluetoothProtocol.h */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1837C44D19863E8B0093F93B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1837C4CE19863F660093F93B /* WinkData.h in Headers */,
+				1837C4D019863F660093F93B /* RangeDefinition.h in Headers */,
+				1837C4D119863F660093F93B /* ProductDefinitions.h in Headers */,
+				1837C4DE19863F660093F93B /* ProductBluetoothTest.h in Headers */,
+				1868613D19864FD200980618 /* WinkPublic.h in Headers */,
+				1837C4C619863EFE0093F93B /* BluetoothListener.h in Headers */,
+				1837C4FF19863F690093F93B /* WinkAPI.h in Headers */,
+				1868613E198650A600980618 /* WinkBluetoothProtocol.h in Headers */,
+				9F5689E41ADF9DCC00A49AF1 /* GenericProduct.h in Headers */,
+				9F51921B1A78DE2B0091BA2B /* ProductWinkBT.h in Headers */,
+				9F5689E61ADF9E1C00A49AF1 /* ProductProtocol.h in Headers */,
+				1837C50019863F690093F93B /* WinkAPIProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1837C3A819863C570093F93B /* WinkAPI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1837C3C519863C570093F93B /* Build configuration list for PBXNativeTarget "WinkAPI" */;
+			buildPhases = (
+				1837C3A519863C570093F93B /* Sources */,
+				1837C3A619863C570093F93B /* Frameworks */,
+				1837C3A719863C570093F93B /* CopyFiles */,
+				1837C3CB19863D480093F93B /* ShellScript */,
+				1837C44D19863E8B0093F93B /* Headers */,
+				1837C501198640850093F93B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WinkAPI;
+			productName = WinkAPI;
+			productReference = 1837C3A919863C570093F93B /* libWinkAPI.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CF81E121773377A00DD723C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Aginova Inc";
+			};
+			buildConfigurationList = 1CF81E151773377A00DD723C /* Build configuration list for PBXProject "WinkAPI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CF81E111773377A00DD723C;
+			productRefGroup = 1CF81E1F1773377A00DD723C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1837C3A819863C570093F93B /* WinkAPI */,
+				1C39A6C41781C52C00223A30 /* WinkAggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1837C501198640850093F93B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1837C502198640900093F93B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1837C3CB19863D480093F93B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/Headers\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n\n# Link the \"Current\" version to \"A\"\n\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n\n# cause propagating rebuilds of files that import these headers.\n\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n";
+		};
+		1C39A6C81781C53300223A30 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\necho \"aaaa\"\necho \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n/bin/cp -a \"${BUILT_PRODUCTS_DIR}/Headers/\" \"${BUILT_PRODUCTS_DIR}/WinkAPI.framework/Versions/A/Headers\"\n\nrm -rf ${SRCROOT}/Products\nmkdir ${SRCROOT}/Products\n/bin/cp -a \"${BUILT_PRODUCTS_DIR}/WinkAPI.framework\" \"${SRCROOT}/Products/\"\n\nroot=${SRCROOT}\necho ${root}\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1837C3A519863C570093F93B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1837C3D619863DB60093F93B /* BluetoothListener.m in Sources */,
+				1837C3E319863DB60093F93B /* WinkData.m in Sources */,
+				1837C3E719863DB60093F93B /* RangeDefinition.m in Sources */,
+				9F5689E31ADF9DCC00A49AF1 /* GenericProduct.m in Sources */,
+				1837C40119863DB60093F93B /* ProductBluetoothTest.m in Sources */,
+				9F51921C1A78DE2B0091BA2B /* ProductWinkBT.m in Sources */,
+				1837C44319863DB60093F93B /* WinkAPI.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1837C3CD19863D6A0093F93B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1837C3A819863C570093F93B /* WinkAPI */;
+			targetProxy = 1837C3CC19863D6A0093F93B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CF81E231773377A00DD723C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CF81E241773377A00DD723C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1837C3C619863C570093F93B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/WinkAPI.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinkAPI/WinkAPI-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = WinkAPI;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1837C3C719863C570093F93B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				DSTROOT = /tmp/WinkAPI.dst;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WinkAPI/WinkAPI-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = WinkAPI;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1C39A6C51781C52C00223A30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C39A6C61781C52C00223A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1CF81E271773377A00DD723C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
+				VALID_ARCHS = "armv7 armv7s arm64 i386 x86_64";
+			};
+			name = Debug;
+		};
+		1CF81E281773377A00DD723C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PUBLIC_HEADERS_FOLDER_PATH = Headers;
+				SDKROOT = iphoneos;
+				STRIP_STYLE = "non-global";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s arm64 i386 x86_64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1837C3C519863C570093F93B /* Build configuration list for PBXNativeTarget "WinkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1837C3C619863C570093F93B /* Debug */,
+				1837C3C719863C570093F93B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C39A6C71781C52C00223A30 /* Build configuration list for PBXAggregateTarget "WinkAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C39A6C51781C52C00223A30 /* Debug */,
+				1C39A6C61781C52C00223A30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CF81E151773377A00DD723C /* Build configuration list for PBXProject "WinkAPI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CF81E271773377A00DD723C /* Debug */,
+				1CF81E281773377A00DD723C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CF81E121773377A00DD723C /* Project object */;
+}
