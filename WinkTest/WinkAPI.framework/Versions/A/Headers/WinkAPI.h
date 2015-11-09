@@ -38,7 +38,7 @@ typedef NS_ENUM(NSInteger, DeviceState)  {
 - (void) startListeningForBLEDevice;
 - (void) stopListeningForBLEDevice;
 - (void) connectToDeviceWithIdentifier:(NSString*)identifier;
-- (void) disconnectBLEDevice;
+- (void) disconnectBLEDeviceWithIdentifier:(NSString*)identifier;
 - (void) restoreCentralWithIdentifier:(NSString*)identifier;
 - (void) syncDeviceClock;
 
@@ -59,6 +59,7 @@ typedef NS_ENUM(NSInteger, DeviceState)  {
 - (void) disableAlarm;
 - (BOOL) getAlarmState;
 
+- (void) getBatteryLevelFromDevice;
 - (NSNumber*) getBatteryLevel;
 - (NSString*) getFirmwareVersion;
 - (NSString*) getSerialNumber;

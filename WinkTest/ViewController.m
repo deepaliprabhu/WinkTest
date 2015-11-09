@@ -114,6 +114,13 @@
 - (void) didReceiveAlarmTime:(NSTimeInterval)interval {
 }
 
+- (void) didReceivePairedState:(BOOL)pairedState_ {
+    if (!pairedState_) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"\n" message:@"Please set wink in pairing mode and connect again" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+        [alertView show];
+    }
+}
+
 - (void) didReceiveStoredPacketCount:(NSNumber *)packetCount {
     storedPacketCount = [packetCount intValue];
     _packetCountLabel.text = [NSString stringWithFormat:@"%d",storedPacketCount];

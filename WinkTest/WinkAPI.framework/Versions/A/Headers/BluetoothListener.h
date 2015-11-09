@@ -20,14 +20,16 @@
     int batteryLevel;
     int sensorId;
     int productId;
-    NSNumber *lastTemp;
     int tempPrecision;
     int tempUnit;
     int storedPacketCount;
     int storedPacketsRead;
     int ledMode;
+    int pairingCheckCount;
     long int liveTimestamp;
     BOOL alarmState;
+    BOOL pairedState;
+    NSNumber *lastTemp;
     NSString *firmwareVersion;
     NSString *serialNumber;
     NSMutableString *modeString;
@@ -67,7 +69,7 @@
 
 - (void) restoreCentralWithIdentifier:(NSString*)identifier;
 - (void) connectToBLEDeviceWithIdentifier:(NSString*)identifier;
-- (void) disconnectBLEDevice;
+- (void) disconnectBLEDeviceWithIdentifier:(NSString*)identifier;
 
 //called to sync clock
 - (void) syncDeviceClock;
@@ -86,8 +88,8 @@
 - (NSTimeInterval) getAlarmTime;
 - (void) disableAlarm;
 - (BOOL) getAlarmState;
-
-
+- (BOOL) getPairedState;
+- (void) getBatteryLevelFromDevice;
 - (NSNumber*) getBatteryLevel;
 - (NSString*) getFirmwareVersion;
 - (NSString*) getSerialNumber;

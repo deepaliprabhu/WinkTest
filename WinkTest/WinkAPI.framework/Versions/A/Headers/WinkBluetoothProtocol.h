@@ -46,5 +46,6 @@ typedef NS_ENUM(NSInteger, BluetoothError)  {
 - (void) didReceiveTempPrecision:(NSNumber*)tempPrecision;
 - (void) didReceiveAlarmTime:(NSTimeInterval)interval;
 - (void) didReceiveAlarmState:(BOOL)alarmState;
+- (void) didReceivePairedState:(BOOL)pairedState;
 
 @end

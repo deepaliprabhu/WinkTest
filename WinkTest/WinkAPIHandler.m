@@ -74,6 +74,14 @@ static WinkAPIHandler *_sharedInstance = nil;
     }
 }
 
+- (void) didReceivePairedState:(BOOL)pairedState {
+    NSLog(@"Did receive paired state: %d",pairedState);
+    [_delegate didReceivePairedState:pairedState];
+    if (firstDelegate) {
+        [firstDelegate didReceivePairedState:pairedState];
+    }
+}
+
 - (void) didReceiveTempUnit:(NSNumber*)tempUnit {
     //ledState = ledState;
     [_delegate didReceiveTempUnit:tempUnit];

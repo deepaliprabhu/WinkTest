@@ -84,6 +84,13 @@
     [_alarmSwitch setOn:alarmState_ animated:true];
 }
 
+- (void) didReceivePairedState:(BOOL)pairedState_ {
+    if (!pairedState_) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"\n" message:@"Please set wink in pairing mode and connect again" delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+        [alertView show];
+    }
+}
+
 - (void) didReceiveTempUnit:(NSNumber*)tempUnit {
     [_tempUnitControl setSelectedSegmentIndex:[tempUnit integerValue]];
 }

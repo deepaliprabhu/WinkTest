@@ -44,6 +44,8 @@ __pd(APIHandlerProtocol);
 - (void) bluetoothError:(NSString*)errorMessage;
 - (void) didReceiveAlarmTime:(NSTimeInterval)interval;
 - (void) didReceiveAlarmState:(BOOL)alarmState;
+- (void) didReceivePairedState:(BOOL)pairedState;
+
 
 - (BOOL) getLEDState;
 - (void) setAPIDelegate:(id)delegate_;
